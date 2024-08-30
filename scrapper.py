@@ -58,7 +58,8 @@ def run_scrapper(url):
     driver.get(url)
     driver.maximize_window()
 
-    time.sleep(3)
+    #time to load the page
+    time.sleep(1)
 
     soup = bs(driver.page_source, features="html.parser")
     offers = findNumberOfOffers(soup)
@@ -77,7 +78,7 @@ def run_scrapper(url):
             scrollValue += 2340
             driver.execute_script(f"window.scrollTo(0, {scrollValue});")
         
-        time.sleep(2.4)
+        time.sleep(0.4)
 
         soup = bs(driver.page_source, features="html.parser")
 
