@@ -2,7 +2,7 @@
 
 This project aims to analyze the IT job market in Poznań using data collected from JustJoinIT. It consists of two main components:
 
-1. **scrapper.py** - A Python script that scrapes job offers from [JustJoinIT Poznań](https://justjoin.it/poznan). This script collects information about job listings, including salary data and required skills, using web scraping techniques.
+1. **scrapper.py** - A Python script that scrapes job offers from [JustJoinIT Poznań](https://justjoin.it/poznan). This script collects information about job listings, including salary data and required skills, using web scraping techniques. Script saves scrapped data in xlsx and txt files.
 
 2. **JustJoinIT.ipynb** - A Google Colab notebook where data analysis is performed. The notebook includes:
    - Calculation of average salaries for junior and senior positions.
